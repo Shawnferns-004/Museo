@@ -10,11 +10,11 @@ app = Flask(__name__)
 CORS(app)  # Enable CORS for Node.js requests
 
 # Configure Gemini API
-genai.configure(api_key="AIzaSyBSSF_mTx0BT5aStfrYmoy5AEFrk0sdZPc")
+genai.configure(api_key="your-gemni-api key")
 model = genai.GenerativeModel("gemini-2.0-flash")
 
 # MongoDB Connection
-client = MongoClient("mongodb+srv://shawnferns004:eljitaferns2003@cluster0.enhnedl.mongodb.net/museo")
+client = MongoClient("you-monog-db-link")
 db = client["museo"]
 monuments_collection = db["monuments"]
 
